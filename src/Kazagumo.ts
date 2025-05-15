@@ -291,7 +291,9 @@ export class Kazagumo extends EventEmitter {
   public async getLeastUsedNode(group?: string): Promise<Node> {
     const nodes: Node[] = [...this.shoukaku.nodes.values()];
 
-    const onlineNodes = nodes.filter((node) => node.state === State.CONNECTED && (!group || node.group === group));
+    const onlineNodes = nodes.filter(
+      (node) => node.state === (State.CONNECTED as any) && (!group || node.group === group),
+    );
     if (!onlineNodes.length && group && !nodes.find((x) => x.group === group))
       throw new KazagumoError(2, `There is no such group: ${group}`);
     if (!onlineNodes.length)
