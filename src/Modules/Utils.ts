@@ -1,4 +1,4 @@
-import { Track } from 'shoukaku';
+import { Track } from '@pixel_nomad/shoukaku';
 import { KazagumoTrack } from '../Managers/Supports/KazagumoTrack';
 
 export class KazagumoUtils {

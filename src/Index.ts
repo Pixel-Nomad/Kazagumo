@@ -1,4 +1,4 @@
-// import { NodeOption, PlayerUpdate, ShoukakuOptions, TrackExceptionEvent, WebSocketClosedEvent } from "shoukaku";
+// import { NodeOption, PlayerUpdate, ShoukakuOptions, TrackExceptionEvent, WebSocketClosedEvent } from "@pixel_nomad/shoukaku";
 import { KazagumoTrack } from './Managers/Supports/KazagumoTrack';
 import { KazagumoQueue } from './Managers/Supports/KazagumoQueue';
 import { KazagumoPlayer } from './Managers/KazagumoPlayer';

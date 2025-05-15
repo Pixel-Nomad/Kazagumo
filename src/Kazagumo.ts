@@ -28,7 +28,7 @@ import {
   TrackStuckEvent,
   VoiceChannelOptions,
   WebSocketClosedEvent,
-} from 'shoukaku';
+} from '@pixel_nomad/shoukaku';
 
 import { KazagumoPlayer } from './Managers/KazagumoPlayer';
 import { KazagumoTrack } from './Managers/Supports/KazagumoTrack';

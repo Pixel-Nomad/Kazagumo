@@ -8,7 +8,7 @@ import {
   TrackExceptionEvent,
   TrackStuckEvent,
   WebSocketClosedEvent,
-} from 'shoukaku';
+} from '@pixel_nomad/shoukaku';
 import {
   Events,
   KazagumoError,

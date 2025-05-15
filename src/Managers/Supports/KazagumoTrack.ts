@@ -8,7 +8,7 @@ import {
   SourceIDs,
   SupportedSources,
 } from '../../Modules/Interfaces';
-import { Track } from 'shoukaku';
+import { Track } from '@pixel_nomad/shoukaku';
 import { KazagumoPlayer } from '../KazagumoPlayer';
 
 export class KazagumoTrack {
