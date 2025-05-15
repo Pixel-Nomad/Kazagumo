@@ -1,14 +1,14 @@
 {
-  "name": "kazagumo",
+  "name": "@pixel_nomad/kazagumo",
   "version": "3.2.2",
   "description": "A shoukaku wrapper with built-in queue support.",
   "main": "dist/Index.js",
   "types": "dist/Index.d.ts",
-  "homepage": "https://github.com/Takiyo0/Kazagumo",
-  "readme": "https://github.com/Takiyo0/Kazagumo#readme",
+  "homepage": "https://github.com/Pixel-Nomad/Kazagumo",
+  "readme": "https://github.com/Pixel-Nomad/Kazagumo#readme",
   "bugs": {
-    "url": "https://github.com/Takiyo0/Kazagumo",
-    "email": "takiyotakahashi@gmail.com"
+    "url": "https://github.com/Pixel-Nomad/Kazagumo",
+    "email": "mr.tgamer247797704@gmail.com"
   },
   "engines": {
     "node": ">=16.5.0"
@@ -30,7 +30,7 @@
     "player",
     "discord-player"
   ],
-  "author": "Takiyo",
+  "author": "Pixel Nomad",
   "files": [
     "dist/**/**/*"
   ],
