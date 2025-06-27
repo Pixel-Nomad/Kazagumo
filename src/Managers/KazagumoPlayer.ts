@@ -125,10 +125,10 @@ export class KazagumoPlayer {
           )
         )
           this.queue.previous = [this.queue.current].concat(this.queue.previous);
-        this.emit(Events.PlayerEnd, this, this.queue.current);
-        this.queue.current = null;
         this.playing = false;
         if (!this.queue.length) return this.emit(Events.PlayerEmpty, this);
+        this.emit(Events.PlayerEnd, this, this.queue.current);
+        this.queue.current = null;
         return this.play();
       }
 
@@ -143,10 +143,10 @@ export class KazagumoPlayer {
       )
         this.queue.previous = [this.queue.current].concat(this.queue.previous);
       const currentSong = this.queue.current;
-      this.emit(Events.PlayerEnd, this, currentSong);
       this.queue.current = null;
 
-      if (this.queue.length) {
+      if (this.queue.length) this.emit(Events.PlayerEnd, this, currentSong);
+      else {
         this.playing = false;
         return this.emit(Events.PlayerEmpty, this);
       }
