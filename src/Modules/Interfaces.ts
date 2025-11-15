@@ -25,7 +25,7 @@ export interface KazagumoOptions {
   send: (guildId: string, payload: Payload) => void;
 }
 
-export type SearchEngines = 'youtube' | 'soundcloud' | 'youtube_music' | string;
+export type SearchEngines = 'youtube' | 'soundcloud' | 'youtube_music' | 'spotify' | 'apple' | 'jiosaavn' | string;
 export type YoutubeThumbnail = 'default' | 'hqdefault' | 'mqdefault' | 'sddefault' | 'maxresdefault';
 
 export interface Payload {
@@ -45,6 +45,9 @@ export const SourceIDs = {
   youtube: 'yt',
   youtube_music: 'ytm',
   soundcloud: 'sc',
+  spotify: 'sp',
+  apple: 'am',
+  jiosaavn: 'js',
 };
 
 export interface KazagumoPlayerOptions {
