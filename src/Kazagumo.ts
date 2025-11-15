@@ -325,9 +325,14 @@ export class Kazagumo extends EventEmitter {
     if (!node) throw new KazagumoError(3, 'No node is available');
 
     const source = (SourceIDs as any)[
-      (options?.engine && ['youtube', 'youtube_music', 'soundcloud', 'spotify', 'apple', 'jiosaavn'].includes(options.engine) ? options.engine : null) ||
+      (options?.engine &&
+      ['youtube', 'youtube_music', 'soundcloud', 'spotify', 'apple', 'jiosaavn'].includes(options.engine)
+        ? options.engine
+        : null) ||
         (!!this.KazagumoOptions.defaultSearchEngine &&
-        ['youtube', 'youtube_music', 'soundcloud', 'spotify', 'apple', 'jiosaavn'].includes(this.KazagumoOptions.defaultSearchEngine!)
+        ['youtube', 'youtube_music', 'soundcloud', 'spotify', 'apple', 'jiosaavn'].includes(
+          this.KazagumoOptions.defaultSearchEngine!,
+        )
           ? this.KazagumoOptions.defaultSearchEngine
           : null) ||
         'youtube'
